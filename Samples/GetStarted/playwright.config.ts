@@ -35,8 +35,7 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: "chrome",
-      dependencies: ["setup"],
+      name: "chrome",     
       testMatch: "**/*.spec.ts",
       use: {
         headless: true,
