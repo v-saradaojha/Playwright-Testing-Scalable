@@ -35,8 +35,19 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: "chrome",
+      dependencies: ["setup"],
+      testMatch: "**/*.spec.ts",
+      use: {
+        headless: true,
+        browserName: "chromium",
+        viewport: { width: 1280, height: 720 },
+        ignoreHTTPSErrors: true,
+        navigationTimeout:30*1000,
+        launchOptions: {
+          slowMo: 2000,
+        },
+      },
     },
 
     // {
