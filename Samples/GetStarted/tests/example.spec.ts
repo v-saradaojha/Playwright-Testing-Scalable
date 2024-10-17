@@ -1,5 +1,4 @@
 import { test, expect } from "@playwright/test";
-import * as playwright from "@playwright/test";
 import { runSimplePageTest } from "../util";
 
 for (let i = 0; i < 200; i++) {
