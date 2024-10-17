@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import * as playwright from "@playwright/test";
 import { runSimplePageTest } from "../util";
 import { v4 as uuid } from 'uuid';
 import * as dotenv from "dotenv";
