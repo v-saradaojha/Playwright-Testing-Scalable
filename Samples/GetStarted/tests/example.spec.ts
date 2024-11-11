@@ -4,7 +4,7 @@ import { runSimplePageTest } from "../util";
 import { v4 as uuid } from 'uuid';
 import * as dotenv from "dotenv";
 dotenv.config();
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 30; i++) {
   test(`Run scalable Test ${i}`, async () => {
     let serviceRunId = uuid();
     const wsEndpoint = `${process.env.PLAYWRIGHT_SERVICE_URL}?cap={"os":"${'linux'}","runId":"${serviceRunId}"}`;
